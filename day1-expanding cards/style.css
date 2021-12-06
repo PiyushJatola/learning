@@ -31,7 +31,7 @@ body {
     border-radius: 50px;
     columns: #fff;
     cursor: pointer;
-    flex: 0.5;
+    flex: 1;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
@@ -46,4 +46,31 @@ body {
     left: 20px;
     margin: 0;
     opacity: 0;
+    color: #fff;
 }
+
+
+.panel.active {
+    flex: 5;
+    border-radius: 50px;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media(max-width:480px) {
+    .container {
+        width: 100w;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+ 
+    
